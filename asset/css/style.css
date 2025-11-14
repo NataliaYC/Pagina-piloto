@@ -1,0 +1,101 @@
+/* 1. Estilos Globales y Reajustes */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif; /* Recomendación de fuente */
+    margin: 0; /* Elimina márgenes extra */
+    padding: 0;
+}
+
+h1 {
+    color: rgb(20, 148, 160);
+}
+
+/* H2: Corregido para un mejor contraste */
+h2 {
+    color: rgb(20, 148, 160); /* Se ve mejor sobre fondos claros/rosas */
+    text-align: center;
+}
+
+h3 {
+    color: rgb(20, 148, 160);
+}
+
+/* 2. Estilos de Imagen */
+img {
+    width: 250px;
+    height: 270px; 
+    display: block;
+    padding: 20px color white;
+    margin: auto;
+    /* CORRECCIÓN: Sintaxis correcta de la propiedad border */
+    border: 6px solid rgb(249, 86, 173);
+    /* Aseguramos que la imagen nunca exceda el ancho del contenedor */
+    max-width: 100%; 
+}
+
+/* 3. Media Queries (Mantienen el cambio de color) */
+/* para celu (300px o más) */
+@media screen and (min-width: 300px){
+    body{background-color: rgb(243, 160, 222);}
+}
+/* para tablet (600px o más) */
+@media screen and (min-width: 600px){
+    body{background-color: rgb(172, 240, 249);}
+}
+/* para laptop (992px o más) */
+@media screen and (min-width: 992px){
+    body{background-color: white;}
+}
+
+/* 4. Estilos de Layout y Contenedores */
+header{
+    text-align: center;
+    padding-bottom: 20px; /* Espacio debajo del header */
+}
+
+/* CORRECCIÓN: Eliminamos anchos fijos y la altura forzada. */
+article {
+    text-align: justify;
+    margin: 20px;
+    /* width: 1455px; y height: 240px; ELIMINADOS */
+}
+
+aside{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Fondo rosa para la navbar y el artículo (depende de dónde apliques la clase) */
+.fondo_rosa {
+    /* Eliminamos text-align: center; ya que Bootstrap lo maneja mejor */
+    background-color: rgb(249, 86, 173);
+}
+
+/* CORRECCIÓN: Eliminamos propiedades inválidas y anchos fijos. */
+section {
+    background-color: rgb(249, 86, 173);
+    text-align: left;
+    padding: 20px; /* Usamos padding para el espacio en lugar de border */
+    margin: 20px auto; /* Centra la sección en el contenedor */
+    /* width: 1100px; y display: 300px; y border: 100px; ELIMINADOS */
+    max-width: 100%;
+}
+
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333; /* Fondo para que se vea el texto */
+    color: white;
+}
+
+/* 5. Estilos de Enlaces y Redes Sociales */
+a{
+    /* Las propiedades width/height aquí no suelen ser efectivas en enlaces */
+    display: inline-block;
+}
+
+.imagen_instagram{
+    width: 90px;
+    height: 90px;
+    /* color no aplica a SVG o PNG, se mantiene el color de la imagen */
+}
